@@ -1,0 +1,39 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --preto: #011627ff;
+    --branco: #fdfffcff;
+    --cinza: #2ec4b6ff;
+    --vermelho: #e71d36ff;
+    --laranja: #ff9f1cff;
+    --font-title: "Edu AU VIC WA NT Guides", serif;
+    --font-text: "DM Sans", serif;
+}
+
+body{
+    font-family: var(--font-text);
+    background-color: var(--cinza);
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--preto);
+}
+
+footer p{
+    color: var(--branco);
+    font-size: 0.9rem;
+    margin: 0.8rem 0 1.2rem 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--laranja);
+}
