@@ -1,4 +1,4 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,12 +10,13 @@
     --cinza: #2ec4b6ff;
     --vermelho: #e71d36ff;
     --laranja: #ff9f1cff;
-    --font-title: "Edu AU VIC WA NT Guides", serif;
-    --font-text: "DM Sans", serif;
+   
+    --fonte-titulo: "Playwrite GB S", serif;
+    --fonte-texto: "Dancing Script", serif;
 }
 
 body{
-    font-family: var(--font-text);
+    font-family: var(--fonte-titulo);
     background-color: var(--cinza);
 }
 
@@ -24,7 +25,7 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--preto);
+    background-color: var(--laranja);
 }
 
 footer p{
@@ -33,7 +34,77 @@ footer p{
     margin: 0.8rem 0 1.2rem 0;
 }
 
+#caixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.cartao {
+    margin: 1rem;
+    background-color: var(--azul);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao__conteudo {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+.cartao__conteudo h3 {
+    border: 2px solid var(--laranja);
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1.5vw;
+    backface-visibility: hidden;
+    color: var(--preto);
+}
+
+.cartao__conteudo p {
+    color: var(--preto);
+}
+
+.cartao:hover .cartao__conteudo {
+    transform: rotateY(180deg);
+}
+
+.cartao__conteudo__pergunta {
+    font-size: 1.5rem;
+    margin: 2.5rem;
+}
+
+.cartao__conteudo p {
+    margin: 1rem;
+    padding: 1.3rem;
+}
+
+.cartao__conteudo__resposta {
+    font-size: 1.5rem;
+    transform: rotateY(180deg);
+}
+
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
 footer a {
     text-decoration: none;
-    color: var(--laranja);
+    color: var(--branco);
 }
