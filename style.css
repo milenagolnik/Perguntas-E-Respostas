@@ -5,11 +5,15 @@
 }
 
 :root{
-    --preto: #011627ff;
+    --preto: #000000;
     --branco: #fdfffcff;
-    --cinza: #2ec4b6ff;
+    --cinza: rgb(181, 196, 195);
     --vermelho: #e71d36ff;
     --laranja: #ff9f1cff;
+    --azul: rgb(49, 132, 220);
+    --rosa: #e662ba;
+    --rosa2:#b13287;
+    --rosa3: #6e0a4d;
    
     --fonte-titulo: "Playwrite GB S", serif;
     --fonte-texto: "Dancing Script", serif;
@@ -17,7 +21,7 @@
 
 body{
     font-family: var(--fonte-titulo);
-    background-color: var(--cinza);
+    background-color: var(--rosa2);
 }
 
 footer{
@@ -25,7 +29,7 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--laranja);
+    background-color: var(--rosa3);
 }
 
 footer p{
@@ -44,7 +48,7 @@ footer p{
 
 .cartao {
     margin: 1rem;
-    background-color: var(--azul);
+    background-color: var(--rosa);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
@@ -82,12 +86,13 @@ footer p{
 
 .cartao__conteudo__pergunta {
     font-size: 1.5rem;
-    margin: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 .cartao__conteudo p {
     margin: 1rem;
     padding: 1.3rem;
+    font-size: 20px;
 }
 
 .cartao__conteudo__resposta {
